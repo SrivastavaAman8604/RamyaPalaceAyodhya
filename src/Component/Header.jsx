@@ -11,7 +11,7 @@ const Header = () => {
       </div>
       <header>
       
-         <div className="header fixed-top">
+         <div className="header">
             <div className="container">
                <div className="row">
                   <div className="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
@@ -19,7 +19,7 @@ const Header = () => {
                         <div className="center-desk">
                            <div className="logo ">
                               <Link to="/home">
-                                 <img src="images/Hotel Ramaya Palace Logo_.png" alt="#" className="img-fluid logo"/>
+                                 <img src="images/Hotel Ramaya Palace Logo_.png" alt="logo" className="img-fluid logo"/>
                               </Link>
                            </div>
                         </div>
@@ -45,14 +45,17 @@ const Header = () => {
                                  {/* <a className="nav-link" href="blog.html">Ayodhya</a> */}
                               </li>
                               <li className="nav-item">
-                              <NavLink to="./advantage" className="nav-link">Choose us</NavLink>
+                              <NavLink to="./advantage" className="nav-link">Facility</NavLink>
                                  {/* <a className="nav-link" href="room.html">Advantages</a> */}
                               </li>
                               <li className="nav-item ">
                                  <NavLink to="./gallery" className="nav-link">Gallery</NavLink>
                                  {/* <a className="nav-link" href="gallery.html">Gallery</a> */}
                               </li>
-                              
+                              <li className="nav-item">
+                                 <NavLink to="./Prices" className="nav-link">Tariff</NavLink>
+                                 {/* <a className="nav-link" href="room.html">Advantages</a> */}
+                              </li>
                               <li className="nav-item">
                                  <NavLink to="./contact" className="nav-link">Contact</NavLink>
                                  {/* <a className="nav-link" href="contact.html">Contact Us</a> */}

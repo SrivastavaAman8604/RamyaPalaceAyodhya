@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet';
 
 const About = () => {
   return (
     <>
+    <Helmet>
+         <title>About us</title>
+         <meta name='description' content='All About Ramya Palace'/>
+      </Helmet>
       <div className="back_re">
          <div className="container">
             <div className="row">
@@ -28,7 +33,7 @@ const About = () => {
                </div>
                <div className="col-md-7">
                   <div className="about_img">
-                     <figure><img src="images/cropImages/20220509_185915.jpg" alt="#"/></figure>
+                     <figure><img src="images/cropImages/20220509_185915.jpg" alt="about hotel"/></figure>
                   </div>
                </div>
             </div>

@@ -15,7 +15,7 @@ const Footer = () => {
                      <ul className="conta">
                         <li><i className="fa fa-map-marker" aria-hidden="true"></i> Address</li>
                         <li><i className="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
-                        <li> <i className="fa fa-envelope" aria-hidden="true"></i><a href="#"> demo@gmail.com</a></li>
+                        <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#"> demo@gmail.com</Link></li>
                      </ul>
                   </div>
                   <div className="col-md-4">
@@ -31,10 +31,13 @@ const Footer = () => {
                            <Link to="./ayodhya">Ayodhya</Link>
                         </li>
                         <li>
-                           <Link to="./advantage">Choose us</Link>
+                           <Link to="./advantage">Facility</Link>
                         </li>
                         <li>
                            <Link to="./gallery">Gallery</Link>
+                        </li>
+                        <li>
+                           <Link to="./tariff">Tariff</Link>
                         </li>
                         <li>
                            <Link to="./contact">Contact</Link>
@@ -48,29 +51,29 @@ const Footer = () => {
                         <button className="sub_btn">subscribe</button>
                      </form>
                      <ul className="social_icon">
-                        <li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i className="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                        <li><Link to="#"><i className="fa fa-facebook" aria-hidden="true"></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-twitter" aria-hidden="true"></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-linkedin" aria-hidden="true"></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link></li>
                      </ul>
                   </div>
                </div>
             </div>
-            <div className="copyright">
+            {/* <div className="copyright">
                <div className="container">
                   <div className="row">
                      <div className="col-md-10 offset-md-1">
                         
                         <p>
-                        © 2019 All Rights Reserved. Design by <a href="https://html.design/"> Free Html Templates</a>
+                        © 2019 All Rights Reserved. Design by <Link to="https://html.design/"> Free Html Templates</Link>
                         <br/><br/>
-                        {/* Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> */}
+                         Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> 
                         </p>
 
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
          </div>
         
     </footer>

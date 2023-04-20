@@ -1,0 +1,69 @@
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+.listing-item {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+    /* background: #fff; */
+    border-radius: 10px;
+    z-index: 0;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+figure.image {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.listing-item .listing {
+    padding: 20px;
+    position: relative;
+}
+
+.listing h4:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+}
+
+.listing h4 {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.tariffSuite{
+    color: #ff0909;
+    font-size: medium;
+    font-weight: bold;
+}
+
+listing-item .listing {
+    padding: 20px;
+    position: relative;
+}
+
+.booking_ocline .book_room .book_now select option{
+    color: black;
+}

@@ -1,22 +1,27 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Banner = () => {
   return (
    <>
-    <section className="banner_main" >
-    <div id="myCarousel" className="carousel slide banner" data-ride="carousel" >
-       <ol className="carousel-indicators ">
-          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-       </ol>
-       <div className="carousel-inner ">
-          <div className="carousel-item active">
-             <img className="first-slide" src="images/cropImages/20220509_185915.1.jpg" alt="First slide"/>
+   <Helmet>
+         <title>Ramya Palace</title>
+         <meta name='description' content='Home Page '/>
+      </Helmet>
+   <section className="banner_main" >
+   <div id="myCarousel" className="carousel slide banner" data-ride="carousel" >
+      <ol className="carousel-indicators ">
+         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div className="carousel-inner ">
+         <div className="carousel-item active">
+            <img className="first-slide" src="images/cropImages/20220509_185915.1.jpg" alt="First slide"/>
              {/* <img className="first-slide" src="images/Images edit/1280x854/Hotel-Post-1280x854-00.jpg" alt="First slide"/> */}
-             <div className="container">
-             </div>
+            <div className="container">
+            </div>
           </div>
           <div className="carousel-item">
              <img className="second-slide" src="images/cropImages/20220509_185426.2.jpg" alt="Second slide" />
@@ -35,29 +40,66 @@ const Banner = () => {
        </a>
     </div>
       
-    <div className="booking_ocline">
-       <div className="container">
-          <div className="row">
-             <div className="col-md-5">
-                <div className="book_room">
-                   <h1>Book a Room Online</h1>
-                   <form className="book_now">
-                      <div className="row">
-                         <div className="col-md-12">
-                            <span>Arrival</span>
-                            <img className="date_cua" src="images/date.png"/>
-                            <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
-                         </div>
-                         <div className="col-md-12">
-                            <span>Departure</span>
-                            <img className="date_cua" src="images/date.png"/>
-                            <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
-                         </div>
-                         <div className="col-md-12">
-                            <button className="book_btn">Book Now</button>
-                         </div>
-                      </div>
-                   </form>
+   <div className="booking_ocline">
+      <div className="container">
+         <div className="row">
+            <div className="col-md-5">
+               <div className="book_room">
+                  <h1>Book a Room Online</h1>
+                  <form className="book_now">
+                     <div className="row">
+                        <div className="col-md-12">
+                           <div className='row'>
+                           <div className='col-md-6'>
+                              <span>Name</span>
+                              <input className="online_book" placeholder="Enter name" type="name"/>
+                           </div>
+                           <div className="col-md-6">
+                              <span>Email</span>
+                              <input className="online_book" placeholder="Email" type="email" name="dd/mm/yyyy"/>
+                           </div>
+                           </div>
+                        </div>
+                        <div className="col-md-12">
+                           <div className='row'>
+                           <div className='col-md-6'>
+                              <span>Phone No.</span>
+                              <input className="online_book" placeholder="Enter number" type="phone" name="dd/mm/yyyy"/>
+                           </div>
+                           <div className="col-md-6">
+                              <span>No. of Persons</span>
+                              {/* <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/> */}
+                              <select name="person" id="p-details" class="form-control online_book">
+                                                <option value="">No. of Persons</option>
+                                                <option value="1 Adult">1 Adult</option>
+                                                <option value="2 Adult">2 Adult</option>
+                                                <option value="3 Adult">3 Adult</option>
+                                                <option value="4 Adult">4 Adult</option>
+                                                <option value="5 Adult">5 Adult</option>
+                                                <option value="6 Adult">6 Adult</option>
+                                             </select>
+                           </div>
+                           </div>
+                        </div>
+                        <div className="col-md-12">
+                           <div className='row'>
+                           <div className="col-md-6">
+                              <span>Arrival</span>
+                              <img className="date_cua" src="images/date.png" alt='Arrival date'/>
+                              <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
+                           </div>
+                           <div className='col-md-6'>
+                              <span>Departure</span>
+                              <img className="date_cua" src="images/date.png" alt='Departure date'/>
+                              <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
+                           </div>
+                           </div>
+                        </div>
+                        <div className="col-md-12">
+                           <button className="book_btn">Book Now</button>
+                        </div>
+                     </div>
+                  </form>
                 </div>
              </div>
           </div>
@@ -80,7 +122,7 @@ const Banner = () => {
                </div>
                <div className="col-md-7">
                   <div className="about_img">
-                     <figure><img src="images/cropImages/20220509_185915.jpg" alt="#" style={{maxHeight:"35em"}}/></figure>
+                     <figure><img src="images/cropImages/20220509_185915.jpg" alt="about hotel" /></figure>
                   </div>
                </div>
             </div>
@@ -93,7 +135,7 @@ const Banner = () => {
             <div className="row">
                <div className="col-md-12">
                   <div className="titlepage">
-                     <h2>Reasons to Choose us</h2>
+                     <h2>Facilities</h2>
                      <p> Make your stay memorable with Us </p>
                   </div>
                </div>
@@ -102,7 +144,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-01.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-01.jpg" alt="Parking Facility"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -113,7 +155,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-02.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-02.jpg" alt="Spacious Room"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -124,7 +166,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-03.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-03.jpg" alt="Luxury & comfy room"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -135,7 +177,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-05.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-05.jpg" alt="fully AC"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -146,7 +188,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-06.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-06.jpg" alt="300m from Shri Ram Janmbhoomi"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -157,7 +199,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-07.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-07.jpg" alt="Affordable Price"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -184,7 +226,7 @@ const Banner = () => {
                <div className="col-md-4">
                   <div className="blog_box">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/arti (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/ayodhya/arti (1).jpg" alt="Sandhya Arti"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Sandhya Arti</h3>
@@ -196,7 +238,7 @@ const Banner = () => {
                <div className="col-md-4">
                   <div className="blog_box room">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/AYODHYA.jpg" alt="#"/></figure>
+                        <figure><img src="images/ayodhya/AYODHYA.jpg" alt="Ghat of Ayodhya"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ghat</h3>
@@ -208,16 +250,17 @@ const Banner = () => {
                <div className="col-md-4 ">
                   <div className="blog_box room">
                      <div className="blog_img ">
-                        <figure><img src="images/ayodhya/Mandir (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/ayodhya/Mandir (1).jpg" alt="Ram Janmabhoomi"/></figure>
                      </div>
                      <div className="blog_room">
-                        <h3>Ram Janmabhoomi</h3>
+                        <h3>Ram Janmbhoomi</h3>
                         <span>birthplace of Lord Rama  </span>
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
                      </div>
                   </div>
                </div>
             </div>
+            <Link className="book_btn text-center" to={"/ayodhya"}> Read More</Link>
          </div>
       </div>
 
@@ -256,7 +299,7 @@ const Banner = () => {
                <div className="col-md-6">
                   <div className="map_main">
                      <div className="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28492.600538754083!2d82.17856816620748!3d26.78981201974049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sAyodhya%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1681909363153!5m2!1sen!2sin"  width="600" height="400" frameborder="0" style={{border:0, width: "100%"}}></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28492.600538754083!2d82.17856816620748!3d26.78981201974049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a07937e6d2823%3A0x5fc8f683b17f222b!2sAyodhya%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1681909363153!5m2!1sen!2sin" title='Your Location' width="600" height="400" frameborder="0" style={{border:0, width: "100%"}}></iframe>
                      </div>
                   </div>
                </div>

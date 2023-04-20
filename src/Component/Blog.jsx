@@ -1,8 +1,13 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 
 const Blog = () => {
   return (
     <>
+    <Helmet>
+         <title>Ayodhya</title>
+         <meta name='description' content='Tourist Places in Ayodhya'/>
+      </Helmet>
       <div className="back_re">
          <div className="container">
             <div className="row">
@@ -20,7 +25,7 @@ const Blog = () => {
                <div className="col-md-12">
                   <div className="titlepage">
                      {/* <h2>Pilgrimage</h2> */}
-                     <p>Discover the Spiritual Essence </p>
+                     {/* <p>Discover the Spiritual Essence </p> */}
                      {/* <p>Discover the Divine City: Ayodhya</p> */}
                   </div>
                </div>

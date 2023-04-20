@@ -355,7 +355,7 @@ button {
      background-color: transparent;
      color: #fff;
      padding: 0 10px;
-     padding-right: 61px;
+     /* padding-right: 61px; */
      margin-bottom: 25px;
      position: relative;
 }
@@ -762,6 +762,7 @@ button {
      margin-top: 90px;
      padding-top: 60px;
      text-align: center;
+     padding-bottom: 20px;
 }
 
 .footer h3 {
