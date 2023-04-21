@@ -263,7 +263,7 @@ button {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 7px 0px 27px 0px;
+     padding: 17px 0px 27px 0px;
      margin: 0 22px;
      color: #010101;
      font-size: 16px;
@@ -294,7 +294,7 @@ button {
 .header {
      width: 100%;
      height: 86px;
-     padding: 15px 0px 15px 0px;
+     padding: 5px 0px 5px 0px;
      background: #fff;
      position: relative;
 }
@@ -356,7 +356,7 @@ button {
      color: #fff;
      padding: 0 10px;
      /* padding-right: 61px; */
-     margin-bottom: 25px;
+     margin-bottom: 20px;
      position: relative;
 }
 
@@ -400,6 +400,9 @@ button {
      
 } */
 
+.carousel-inner{
+     z-index: -1;
+}
 
 /** end banner section **/
 
@@ -867,8 +870,8 @@ ul.link_menu li a:hover {
 
 ul.social_icon {
      padding-top: 24px;
-     width: 100%;
-     float: left;
+     width: 50%;
+     /* float: left; */
      text-align: left;
 }
 
@@ -949,13 +952,29 @@ line-height: 35px;
 }
 
 .logo{
-     width: 60%;
-     /* height: 20%; */
+     width: 75%;
      z-index: 9999999;
      position: absolute;
      margin-top: -10px;
      background-color: #ffff;
      padding: 10px;
-     /* border-radius: 10px; */
+     border-radius: 10px;
 }
 
+.fixed .logo{
+     /* width: 60%;
+     padding: 2px; */
+     width: 62%;
+     /* padding: 2px; */
+     margin-top: -9px;
+}
+
+/* .logo-after{
+     width: 60%;
+     z-index: 9999999;
+     position: absolute;
+     margin-top: -10px;
+     background-color: #ffff;
+     padding: 10px;
+     border-radius: 10px;
+} */

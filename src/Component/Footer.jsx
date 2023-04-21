@@ -10,12 +10,19 @@ const Footer = () => {
          <div className="footer">
             <div className="container">
                <div className="row">
-                  <div className=" col-md-4">
-                     <h3>Contact US</h3>
+                  <div className=" col-md-4 text-left">
+                     {/* <h3>Contact US</h3>
                      <ul className="conta">
                         <li><i className="fa fa-map-marker" aria-hidden="true"></i> Address</li>
                         <li><i className="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
                         <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#"> demo@gmail.com</Link></li>
+                     </ul> */}
+                     <img src="images/Hotel Ramaya Palace Logo_.png" alt="" />
+                     <ul className="social_icon text-center">
+                        <li><Link to="#"><i className="fa fa-facebook" aria-hidden="true"></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
+                        {/* <li><Link to="#"><i className="fa fa-linkedin" aria-hidden="true"></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link></li> */}
                      </ul>
                   </div>
                   <div className="col-md-4">
@@ -44,7 +51,15 @@ const Footer = () => {
                         </li>
                      </ul>
                   </div>
-                  <div className="col-md-4">
+                  <div className=" col-md-4">
+                     <h3>Contact US</h3>
+                     <ul className="conta">
+                        <li><i className="fa fa-map-marker" aria-hidden="true"></i> Address</li>
+                        <li><i className="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
+                        <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#"> demo@gmail.com</Link></li>
+                     </ul>
+                  </div>
+                  {/* <div className="col-md-4">
                      <h3>News letter</h3>
                      <form className="bottom_form">
                         <input className="enter" placeholder="Enter your email" type="text" name="Enter your email"/>
@@ -56,7 +71,7 @@ const Footer = () => {
                         <li><Link to="#"><i className="fa fa-linkedin" aria-hidden="true"></i></Link></li>
                         <li><Link to="#"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link></li>
                      </ul>
-                  </div>
+                  </div> */}
                </div>
             </div>
             {/* <div className="copyright">
@@ -67,7 +82,7 @@ const Footer = () => {
                         <p>
                         © 2019 All Rights Reserved. Design by <Link to="https://html.design/"> Free Html Templates</Link>
                         <br/><br/>
-                         Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> 
+                        Distributed by <a href="https://themewagon.com/" target="_blank">ThemeWagon</a> 
                         </p>
 
                      </div>

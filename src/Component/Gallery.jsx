@@ -30,42 +30,42 @@ const Gallery = () => {
        <div className="row">
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_184838.jpg" alt="Spacious Room"/></figure>
+                <figure><img src="images/compress Image/20220509_184838-min.jpg" alt="Spacious Room"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_184904.jpg" alt="Spacious Room with AC"/></figure>
+                <figure><img src="images/compress Image/20220509_184904-min.jpg" alt="Spacious Room with AC"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_185104.jpg" alt="Luxury Room"/></figure>
+                <figure><img src="images/compress Image/20220509_185104-min.jpg" alt="Luxury Room"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_185034.jpg" alt="Bathroom"/></figure>
+                <figure><img src="images/compress Image/20220509_185034-min.jpg" alt="Bathroom"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_185357.jpg" alt="lobby"/></figure>
+                <figure><img src="images/compress Image/20220509_185357-min.jpg" alt="lobby"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_185451.jpg" alt="lobbyimg"/></figure>
+                <figure><img src="images/compress Image/20220509_185451-min.jpg" alt="lobbyimg"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_185737.jpg" alt="banner"/></figure>
+                <figure><img src="images/compress Image/20220509_185737-min.jpg" alt="banner"/></figure>
              </div>
           </div>
           <div className="col-md-3 col-sm-6">
              <div className="gallery_img">
-                <figure><img src="images/Images/20220509_190007.jpg" alt="hotel view"/></figure>
+                <figure><img src="images/compress Image/20220509_190007-min.jpg" alt="hotel view"/></figure>
              </div>
           </div>
        </div>

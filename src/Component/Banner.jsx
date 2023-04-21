@@ -1,15 +1,28 @@
 import React from 'react'
 import {Link} from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { SocialIcon } from 'react-social-icons';
 
 const Banner = () => {
   return (
    <>
    <Helmet>
-         <title>Ramya Palace</title>
+         <title>Ramay Palace</title>
          <meta name='description' content='Home Page '/>
       </Helmet>
    <section className="banner_main" >
+      <div className="icon-bar">
+   <a href="https://www.facebook.com/theelegancehotel/" target="_blank" className="facebook"><i className="fa fa-facebook"></i>
+   </a>
+   <a href="https://www.instagram.com/theelegancehotel/" target="_blank" className="instagram ">
+      <i className="fa fa-instagram"></i>
+      {/* <i className="bi bi-instagram"></i> */}
+   </a>
+   {/* <SocialIcon url="https://instagram.com/in/jaketrent" /> */}
+
+   <a href="https://api.whatsapp.com/send?phone=+918810719088&amp;text=Hi! I need your help with a booking for Hotel Ramya Palace" target="_blank" className="whatsapp"><i className="fa fa-whatsapp"></i></a>
+   <a href="tel:+918810719088" target="_blank" className="phone"><i className="fa fa-phone"></i></a>
+</div>
    <div id="myCarousel" className="carousel slide banner" data-ride="carousel" >
       <ol className="carousel-indicators ">
          <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
@@ -56,7 +69,7 @@ const Banner = () => {
                            </div>
                            <div className="col-md-6">
                               <span>Email</span>
-                              <input className="online_book" placeholder="Email" type="email" name="dd/mm/yyyy"/>
+                              <input className="online_book" placeholder="Email" type="email" name="email"/>
                            </div>
                            </div>
                         </div>
@@ -64,20 +77,20 @@ const Banner = () => {
                            <div className='row'>
                            <div className='col-md-6'>
                               <span>Phone No.</span>
-                              <input className="online_book" placeholder="Enter number" type="phone" name="dd/mm/yyyy"/>
+                              <input className="online_book" placeholder="Enter number" type="phone" name="phone"/>
                            </div>
                            <div className="col-md-6">
                               <span>No. of Persons</span>
-                              {/* <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/> */}
-                              <select name="person" id="p-details" class="form-control online_book">
-                                                <option value="">No. of Persons</option>
+                              <input className="online_book" placeholder="No. of Persons" list="p-details" name="person"/>
+                                 <datalist id="p-details">
+                                                {/* <option value="">No. of Persons</option> */}
                                                 <option value="1 Adult">1 Adult</option>
                                                 <option value="2 Adult">2 Adult</option>
                                                 <option value="3 Adult">3 Adult</option>
                                                 <option value="4 Adult">4 Adult</option>
                                                 <option value="5 Adult">5 Adult</option>
                                                 <option value="6 Adult">6 Adult</option>
-                                             </select>
+                                 </datalist>
                            </div>
                            </div>
                         </div>
@@ -100,16 +113,19 @@ const Banner = () => {
                         </div>
                      </div>
                   </form>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    </section>
-    
+               </div>
+            </div>
+            <div className='col-md-7 text-right'>
+               <img src="images/logoheading.png" alt="" className='carousel-logo'/>
+            </div>
+         </div>
+      </div>
+   </div>
+   </section>
+   
    <section>
-    {/*About Section*/}
-    <div className="about">
+   {/*About Section*/}
+   <div className="about">
          <div className="container-fluid">
             <div className="row">
                <div className="col-md-5">
@@ -306,9 +322,9 @@ const Banner = () => {
             </div>
          </div>
       </div>
- </section>
- </>
-  )
+</section>
+</>
+)
 }
 
 export default Banner
