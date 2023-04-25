@@ -33,7 +33,7 @@ return (
                <div className="col-md-4 listing-item">
                   <div className="blog_box">
                      <div className="blog_img">
-                        <figure><img src="images/Images/20220509_184838.jpg" alt="Room 1"/></figure>
+                        <figure><img src="images/compress Image/20220509_184838-min.jpg" alt="Room 1"/></figure>
                      </div>
                      <div className="blog_room text-center">
                         <h3 className='tariffSuite'>SUITE ROOM</h3>
@@ -49,7 +49,7 @@ return (
                <div className="col-md-4 listing-item">
                   <div className="blog_box room">
                      <div className="blog_img">
-                        <figure><img src="images/Images/20220509_184904.jpg" alt="Room 2"/></figure>
+                        <figure><img src="images/compress Image/20220509_184904-min.jpg" alt="Room 2"/></figure>
                      </div>
                      <div className="blog_room text-center">
                         <h3  className='tariffSuite'>PREMIUM ROOM</h3>
@@ -65,7 +65,7 @@ return (
                <div className="col-md-4 listing-item">
                   <div className="blog_box room">
                      <div className="blog_img ">
-                        <figure><img src="images/Images/20220509_185104.jpg" alt="Room 3"/></figure>
+                        <figure><img src="images/compress Image/20220509_185104-min.jpg" alt="Room 3"/></figure>
                      </div>
                      <div className="blog_room text-center">
                         <h3 className='tariffSuite'>STANDARD ROOM</h3>

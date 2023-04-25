@@ -352,8 +352,9 @@ button {
      width: 100%;
      height: 50px;
      border: #fff solid 1px;
-     background-color: transparent;
-     color: #fff;
+     /* background-color: transparent;
+     color: #fff; */
+     
      padding: 0 10px;
      /* padding-right: 61px; */
      margin-bottom: 20px;
@@ -705,6 +706,11 @@ button {
      font-size: 18px;
      font-weight: normal;
      box-shadow: 2px 0px 6px rgba(255, 9, 9, 0.20);
+}
+
+.main_form span{
+     margin-top: -5px;
+     padding-bottom: 10px;
 }
 
 .main_form .textarea {

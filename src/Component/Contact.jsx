@@ -1,7 +1,9 @@
 import React from 'react'
 import Helmet from 'react-helmet';
 
+
 const Contact = () => {
+
   return (
     <>
       <Helmet>
@@ -22,30 +24,23 @@ const Contact = () => {
       <div className="contact ">
          <div className="container">
             <div className="row">
-               <div className="col-md-12">
-                  <div className="titlepage">
-                     {/* <h2>Contact Us</h2> */}
-                  </div>
-               </div>
-            </div>
-            <div className="row">
                <div className="col-md-6">
-                  <form id="request" className="main_form">
+                  <form id="request" className="main_form" >
                      <div className="row">
                         <div className="col-md-12 ">
-                           <input className="contactus" placeholder="Name" type="type" name="Name" /> 
+                           <input className="contactus" id="name" placeholder="Name" type="text" name="Name"/> 
                         </div>
                         <div className="col-md-12">
-                           <input className="contactus" placeholder="Email" type="type" name="Email" /> 
+                           <input className="contactus" id="email" placeholder="Email" type="email" name="Email"/>
                         </div>
                         <div className="col-md-12">
-                           <input className="contactus" placeholder="Phone Number" type="type" name="Phone Number" />                          
+                           <input className="contactus" id="phone" placeholder="Phone Number" type="number" name="Phone Number"/>                         
                         </div>
                         <div className="col-md-12">
-                           <textarea className="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                           <textarea className="textarea" id="message" placeholder="Message" type="text" Message="Name"/>
                         </div>
                         <div className="col-md-12">
-                           <button className="send_btn">Send</button>
+                           <button className="send_btn contact-us-submit" type='submit'>Send</button>
                         </div>
                      </div>
                   </form>

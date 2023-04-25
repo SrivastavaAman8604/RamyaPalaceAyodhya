@@ -1,12 +1,17 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {Link} from 'react-router-dom';
 import { Helmet } from 'react-helmet';
-import { SocialIcon } from 'react-social-icons';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+// import { SocialIcon } from 'react-social-icons';
 
 const Banner = () => {
+   const [startDate, setStartDate] = useState(new Date());
+   const [endDate, setEndDate] = useState(new Date());
+
   return (
    <>
-   <Helmet>
+      <Helmet>
          <title>Ramay Palace</title>
          <meta name='description' content='Home Page '/>
       </Helmet>
@@ -65,23 +70,23 @@ const Banner = () => {
                            <div className='row'>
                            <div className='col-md-6'>
                               <span>Name</span>
-                              <input className="online_book" placeholder="Enter name" type="name"/>
+                              <input className="online_book" id="name-book" placeholder="Enter name" type="name"/>
                            </div>
                            <div className="col-md-6">
                               <span>Email</span>
-                              <input className="online_book" placeholder="Email" type="email" name="email"/>
+                              <input className="online_book" id="email-book" placeholder="Email" type="email" name="email"/>
                            </div>
                            </div>
                         </div>
                         <div className="col-md-12">
                            <div className='row'>
                            <div className='col-md-6'>
-                              <span>Phone No.</span>
-                              <input className="online_book" placeholder="Enter number" type="phone" name="phone"/>
+                              <span>Phone </span>
+                              <input className="online_book" id='phone-book' placeholder="Enter number" type="phone" name="phone"/>
                            </div>
                            <div className="col-md-6">
                               <span>No. of Persons</span>
-                              <input className="online_book" placeholder="No. of Persons" list="p-details" name="person"/>
+                              <input className="online_book" id="person-book" placeholder="No. of Persons" list="p-details" name="person"/>
                                  <datalist id="p-details">
                                                 {/* <option value="">No. of Persons</option> */}
                                                 <option value="1 Adult">1 Adult</option>
@@ -98,18 +103,31 @@ const Banner = () => {
                            <div className='row'>
                            <div className="col-md-6">
                               <span>Arrival</span>
-                              <img className="date_cua" src="images/date.png" alt='Arrival date'/>
-                              <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
+                              {/* <img className="date_cua" src="images/date.png" alt='Arrival date'/> */}
+                              <DatePicker className="online_book" 
+                              selected={startDate}
+                              dateFormat='dd-MM-yyyy'
+                              onChange={(date) => setStartDate(date)} 
+                              minDate={new Date()}
+                              />
+                              {/* <input className="online_book form-control datepicker" id="date_picker" placeholder="dd/mm/yyyy" type="text" name="dd/mm/yyyy"/> */}
                            </div>
                            <div className='col-md-6'>
                               <span>Departure</span>
-                              <img className="date_cua" src="images/date.png" alt='Departure date'/>
-                              <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/>
+                              {/* <img className="date_cua" src="images/date.png" alt='Departure date'/> */}
+                              <DatePicker className="online_book" 
+                              selected={endDate} 
+                              dateFormat='dd-MM-yyyy'
+                              onChange={(date) => setEndDate(date)} 
+                              minDate={new Date()}
+                              // maxDate={new Date().setDate(30)}
+                              />
+                              {/* <input className="online_book" placeholder="dd/mm/yyyy" type="date" name="dd/mm/yyyy"/> */}
                            </div>
                            </div>
                         </div>
                         <div className="col-md-12">
-                           <button className="book_btn">Book Now</button>
+                           <button className="book_btn book-now-submit">Book Now</button>
                         </div>
                      </div>
                   </form>
@@ -295,19 +313,19 @@ const Banner = () => {
                   <form id="request" className="main_form">
                      <div className="row">
                         <div className="col-md-12 ">
-                           <input className="contactus" placeholder="Name" type="type" name="Name" /> 
+                           <input className="contactus" id="name" placeholder="Name" type="type" name="Name" /> 
                         </div>
                         <div className="col-md-12">
-                           <input className="contactus" placeholder="Email" type="type" name="Email" /> 
+                           <input className="contactus" id="email" placeholder="Email" type="type" name="Email" /> 
                         </div>
                         <div className="col-md-12">
-                           <input className="contactus" placeholder="Phone Number" type="type" name="Phone Number" />                          
+                           <input className="contactus" id="phone" placeholder="Phone Number" type="type" name="Phone Number" />                          
                         </div>
                         <div className="col-md-12">
-                           <textarea className="textarea" placeholder="Message" type="type" Message="Name">Message</textarea>
+                           <textarea className="textarea" id="message" placeholder="Message" type="type" Message="Name"/>
                         </div>
                         <div className="col-md-12">
-                           <button className="send_btn">Send</button>
+                           <button className="send_btn contact-us-submit" type='submit'>Send</button>
                         </div>
                      </div>
                   </form>
