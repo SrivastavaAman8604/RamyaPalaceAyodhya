@@ -263,8 +263,8 @@ button {
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
-     padding: 17px 0px 27px 0px;
-     margin: 0 22px;
+     padding: 17px 0px 20px 0px;
+     margin: 7px 22px;
      color: #010101;
      font-size: 16px;
      line-height: 20px;
@@ -297,6 +297,7 @@ button {
      padding: 5px 0px 5px 0px;
      background: #fff;
      position: relative;
+     margin-top: -44px;
 }
 
 

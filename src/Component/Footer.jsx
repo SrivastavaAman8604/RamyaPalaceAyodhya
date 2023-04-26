@@ -10,7 +10,7 @@ const Footer = () => {
          <div className="footer">
             <div className="container">
                <div className="row">
-                  <div className=" col-md-4 text-left">
+                  <div className=" col-md-4 text-left pb-3">
                      {/* <h3>Contact US</h3>
                      <ul className="conta">
                         <li><i className="fa fa-map-marker" aria-hidden="true"></i> Address</li>
@@ -54,8 +54,8 @@ const Footer = () => {
                   <div className=" col-md-4">
                      <h3>Contact US</h3>
                      <ul className="conta">
-                        <li><i className="fa fa-map-marker" aria-hidden="true"></i> Address</li>
-                        <li><i className="fa fa-mobile" aria-hidden="true"></i> +01 1234569540</li>
+                        <li><i className="fa fa-map-marker" aria-hidden="true"></i> BSNL Office, 1/4/48 A, to, Asharfi Bhawan Chauraha Rd, Ayodhya, Uttar Pradesh 224123</li>
+                        <li><i className="fa fa-mobile" aria-hidden="true"></i> +91 9651000333</li>
                         <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#"> demo@gmail.com</Link></li>
                      </ul>
                   </div>

@@ -1,4 +1,6 @@
 import React,{useState} from 'react'
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
+import { Carousel } from 'react-responsive-carousel';
 import {Link} from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import DatePicker from "react-datepicker";
@@ -17,52 +19,73 @@ const Banner = () => {
       </Helmet>
    <section className="banner_main" >
       <div className="icon-bar">
-   <a href="https://www.facebook.com/theelegancehotel/" target="_blank" className="facebook"><i className="fa fa-facebook"></i>
+   {/* <a href="https://www.facebook.com/theelegancehotel/" target="_blank" className="facebook"><i className="fa fa-facebook"></i>
    </a>
    <a href="https://www.instagram.com/theelegancehotel/" target="_blank" className="instagram ">
       <i className="fa fa-instagram"></i>
-      {/* <i className="bi bi-instagram"></i> */}
-   </a>
-   {/* <SocialIcon url="https://instagram.com/in/jaketrent" /> */}
+   </a> */}
 
-   <a href="https://api.whatsapp.com/send?phone=+918810719088&amp;text=Hi! I need your help with a booking for Hotel Ramya Palace" target="_blank" className="whatsapp"><i className="fa fa-whatsapp"></i></a>
-   <a href="tel:+918810719088" target="_blank" className="phone"><i className="fa fa-phone"></i></a>
+   <a href="https://api.whatsapp.com/send?phone=+919651000333&amp;text=Hi! I need your help with a booking for Hotel Ramay Palace" target="_blank" className="whatsapp"><i className="fa fa-whatsapp"></i></a>
+   <a href="tel:+919651000333" target="_blank" className="phone"><i className="fa fa-phone"></i></a>
 </div>
-   <div id="myCarousel" className="carousel slide banner" data-ride="carousel" >
-      <ol className="carousel-indicators ">
-         <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-         <li data-target="#myCarousel" data-slide-to="1"></li>
-         <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div className="carousel-inner ">
-         <div className="carousel-item active">
-            <img className="first-slide" src="images/cropImages/20220509_185915.1.jpg" alt="First slide"/>
-             {/* <img className="first-slide" src="images/Images edit/1280x854/Hotel-Post-1280x854-00.jpg" alt="First slide"/> */}
-            <div className="container">
+         {/* <div id="myCarousel" className="carousel slide banner" data-ride="carousel" >
+            <ol className="carousel-indicators ">
+               <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
+               <li data-target="#myCarousel" data-slide-to="1"></li>
+               <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div className="carousel-inner ">
+               <div className="carousel-item active">
+                  <img className="first-slide" src="images/cropImages/20220509_185915.1.jpg" alt="First slide"/>
+                  <img className="first-slide" src="images/Images edit/1280x854/Hotel-Post-1280x854-00.jpg" alt="First slide"/>
+                  <div className="container">
+                  </div>
+               </div>
+               <div className="carousel-item">
+                  <img className="second-slide" src="images/cropImages/20220509_185426.2.jpg" alt="Second slide" />
+               </div>
+               <div className="carousel-item">
+                  <img className="third-slide h-25" src="images/cropImages/20220509_184754.1.jpg" alt="Third slide"/>
+               </div>
             </div>
-          </div>
-          <div className="carousel-item">
-             <img className="second-slide" src="images/cropImages/20220509_185426.2.jpg" alt="Second slide" />
-          </div>
-          <div className="carousel-item">
-             <img className="third-slide h-25" src="images/cropImages/20220509_184754.1.jpg" alt="Third slide"/>
-          </div>
-       </div>
-       <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-       <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-       <span className="sr-only">Previous</span>
-       </a>
-       <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-       <span className="carousel-control-next-icon" aria-hidden="true"></span>
-       <span className="sr-only">Next</span>
-       </a>
-    </div>
+            <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+            </a>
+            <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
+            </a>
+         </div> */}
+
+            <Carousel 
+               showIndicators={false}
+               showThumbs={false} 
+               showStatus={false} 
+               interval={2000}
+               infiniteLoop={true}
+               autoPlay={true}
+            >
+               <div>
+                  {/* <img src='images/Images edit/1080x1080/Hotel-Post-00.jpg'/> */}
+                  <img src="images/cropImages/20220509_185915.1.jpg" />
+                    {/* <p className="legend">Legend 1</p> */}
+               </div>
+               <div>
+                  <img src="images/cropImages/20220509_185426.2.jpg" />
+                    {/* <p className="legend">Legend 2</p> */}
+               </div>
+               <div>
+                  <img src="images/cropImages/20220509_184754.1.jpg" />
+                    {/* <p className="legend">Legend 3</p> */}
+               </div>
+            </Carousel>
       
-   <div className="booking_ocline">
+   <div className="booking_ocline ">
       <div className="container">
          <div className="row">
             <div className="col-md-5">
-               <div className="book_room">
+               <div className="book_room animated fadeInUp">
                   <h1>Book a Room Online</h1>
                   <form className="book_now">
                      <div className="row">
@@ -133,8 +156,10 @@ const Banner = () => {
                   </form>
                </div>
             </div>
-            <div className='col-md-7 text-right'>
-               <img src="images/logoheading.png" alt="" className='carousel-logo'/>
+
+            
+            <div className='col-md-7 text-right sidelogo animated fadeInUp'>
+               <img src="images/logoheading.png" alt="" className='carousel-logo '/>
             </div>
          </div>
       </div>
@@ -143,11 +168,11 @@ const Banner = () => {
    
    <section>
    {/*About Section*/}
-   <div className="about">
+   <div className="about home-aboutus">
          <div className="container-fluid">
             <div className="row">
                <div className="col-md-5">
-                  <div className="titlepage">
+                  <div className="titlepage animated fadeInUp">
                      <h2>About Us</h2>
                      <p>We are a premium hotel that strives to provide our guests with the best      possible hospitality experience. Our hotel is located in the heart of the city, providing easy access to all major tourist attractions. </p>
                      <p>At our hotel, we are committed to providing our guests with a memorable and enjoyable stay. Our friendly and courteous staff are always available to assist you with any queries or requests you may have. Thank you for choosing our hotel for your stay in Ayodhya. </p>
@@ -177,7 +202,7 @@ const Banner = () => {
             <div className="row">
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
-                     <div className="room_img">
+                     <div className="room_img animated fadeInUp">
                         <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-01.jpg" alt="Parking Facility"/></figure>
                      </div>
                      {/* <div className="bed_room">
@@ -188,7 +213,7 @@ const Banner = () => {
                </div>
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
-                     <div className="room_img">
+                     <div className="room_img animated fadeInUp">
                         <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-02.jpg" alt="Spacious Room"/></figure>
                      </div>
                      {/* <div className="bed_room">
@@ -199,7 +224,7 @@ const Banner = () => {
                </div>
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
-                     <div className="room_img">
+                     <div className="room_img animated fadeInUp">
                         <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-03.jpg" alt="Luxury & comfy room"/></figure>
                      </div>
                      {/* <div className="bed_room">
@@ -210,7 +235,7 @@ const Banner = () => {
                </div>
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
-                     <div className="room_img">
+                     <div className="room_img animated fadeInUp">
                         <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-05.jpg" alt="fully AC"/></figure>
                      </div>
                      {/* <div className="bed_room">
@@ -221,7 +246,7 @@ const Banner = () => {
                </div>
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
-                     <div className="room_img">
+                     <div className="room_img animated fadeInUp">
                         <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-06.jpg" alt="300m from Shri Ram Janmbhoomi"/></figure>
                      </div>
                      {/* <div className="bed_room">
@@ -232,7 +257,7 @@ const Banner = () => {
                </div>
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
-                     <div className="room_img">
+                     <div className="room_img animated fadeInUp">
                         <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-07.jpg" alt="Affordable Price"/></figure>
                      </div>
                      {/* <div className="bed_room">

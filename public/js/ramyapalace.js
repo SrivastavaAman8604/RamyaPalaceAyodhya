@@ -131,3 +131,8 @@ $(document).ready(function() {
           }
       }
   });
+
+  $(document).on('click', '.navbar-nav .nav-item', function(){
+    $(".navbar-collapse").removeClass("show");  
+    
+  });

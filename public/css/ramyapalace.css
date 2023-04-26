@@ -3,6 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    margin: 0;
     width: 100%;
     z-index: 99999;
     box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.3);
@@ -183,3 +184,147 @@ input::-webkit-inner-spin-button {
 label{margin-left: 20px;}
 #datepicker{width:180px; margin: 0 20px 20px 20px;}
 #datepicker > span:hover{cursor: pointer;}
+
+ @media screen and (max-width: 600px) {
+    .sidelogo {
+      display: none;
+    }
+  }
+/*
+@media only screen and (min-width: 600px) { 
+    .book_room {
+        display: none;
+      }
+} 
+@media screen and (max-width: 768px) {
+    .sidelogo {
+      display: none;
+    }
+  }
+
+@media only screen and (max-width: 600px) {
+    .book_room {
+        background-color: #000000c7;
+        padding: 5px 15px;
+        border-left: #ff0909 solid 5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+     .booking_ocline {
+        position: absolute;
+        /* width: 100%; */
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+    /* } 
+    .book_room{
+        display: none;
+    }
+
+    
+    .book_room  {
+        background-color: #000000c7;
+        /* padding: 5px 15px; 
+        border-left: #ff0909 solid 5px;
+        line-height: 0.5px;
+    }
+
+    .book_room h1{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 0px;
+        color: #fff;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .book_now span {
+        display: none;
+        /* display: block;
+        color: #fff;
+        font-size: 14px;
+        padding-bottom: 5px; /
+   }
+
+   .book_now input{
+        padding: 1px;
+        height: 10px;
+   }
+  }
+
+@media screen and (min-width: 992px) {
+
+    /* .booking_ocline {
+        position: absolute;
+        /* width: 100%; */
+        /* top: 50%; */
+        /* transform: translateY(-50%); */
+    /* } 
+    .res{
+        display: none;
+    }
+} */
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+    .about.home-aboutus{
+        padding-top: 885px;
+    }
+    .booking_ocline{
+        top: 344%;
+    }
+    .footer {
+        background: #0f1521;
+        margin-top: 90px;
+        padding-top: 60px;
+        text-align: center;
+        /* padding-bottom: 286px; */
+    }
+    .top-head ul{
+        display: flex;
+        text-align: right;
+        justify-content: end;
+    }
+    .top-head ul li{
+        /* display: flex;
+        text-align: right;
+        justify-content: end; */
+        display: none;
+    }
+
+    .rev{
+        flex-direction: column-reverse;
+    }
+
+    .mobp{
+        padding-bottom: 20px;
+    }
+ }
+
+
+.black{
+    color: black;
+}
+
+.inc-pad .top-head{
+    z-index: 1!important;
+}
+
+.top-head ul{
+    display: flex;
+    text-align: right;
+    justify-content: end;
+}
+
+.top-head ul li{
+    padding: 10px 12px 21px 10px;
+    
+}
+.top-head ul .forres{
+    /* padding: 10px 12px 21px 10px; */
+    padding-top: -10px;
+}
+

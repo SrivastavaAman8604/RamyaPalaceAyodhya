@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { NavLink , Link} from 'react-router-dom';
 // import {HashLink} from 'react-router-hash-link';
 
@@ -8,6 +8,43 @@ const Header = () => {
    <>
       <div className="loader_bg">
             <div className="loader"><img src="images/loading.gif" alt="#"/></div>
+      </div>
+      <div className="inc-pad">
+        <div className="container">
+            <div className="row ">
+                <div className="col-lg-6">
+                    <div className="flex-item">
+                        {/* <ul>
+                            <li>
+                                <i className="fas fa-map-marker-alt"></i> India, Varanasi
+                            </li>
+                            <li>
+                                <i className="fas fa-envelope-open"></i> Info@gmail.com
+                            </li>
+                        </ul> */}
+                    </div>
+                </div>
+               <div className="col-lg-6 text-right top-head">
+                  <div className='flex-item'>
+                  {/* <div className="social"> */}
+                        <ul>
+                           <li>
+                              
+                                 <i className="fa fa-phone"></i> +91 9651000333
+                              
+                           </li>
+                           <li className='forres'>
+                              
+                                 <i className="fa fa-envelope-open"></i> Info@gmail.com
+                              
+                           </li>
+                           
+                        </ul>
+                  {/* </div> */}
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
       <header>
       

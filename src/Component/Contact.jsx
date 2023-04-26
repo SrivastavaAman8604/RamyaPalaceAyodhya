@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
          </div>
       </main>
-      <div className="contact ">
+      <div className="contact animated fadeInUp">
          <div className="container">
             <div className="row">
                <div className="col-md-6">

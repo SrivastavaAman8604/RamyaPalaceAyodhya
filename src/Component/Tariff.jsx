@@ -19,7 +19,7 @@ return (
             </div>
          </div>
       </div>
-      <div  className="blog">
+      <div  className="blog ">
          <div className="container">
             <div className="row">
                <div className="col-md-12">
@@ -29,7 +29,7 @@ return (
                   </div>
                </div>
             </div>
-            <div className="row">
+            <div className="row animated fadeInUp">
                <div className="col-md-4 listing-item">
                   <div className="blog_box">
                      <div className="blog_img">
@@ -38,8 +38,8 @@ return (
                      <div className="blog_room text-center">
                         <h3 className='tariffSuite'>SUITE ROOM</h3>
                         <div className='listing'>
-                           <h4><span>Double</span> <br />Rs. 7500</h4>
-                           <h4><span>Single</span> <br />Rs. 6500</h4>
+                           <h4><span>Double</span> <br />Rs. 2259</h4>
+                           <h4><span>Single</span> <br />Rs. 1930</h4>
                         </div>
                         {/* <span>offering prayers to Lord Rama </span> */}
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
@@ -54,8 +54,8 @@ return (
                      <div className="blog_room text-center">
                         <h3  className='tariffSuite'>PREMIUM ROOM</h3>
                         <div className='listing'>
-                           <h4><span>Double</span> <br />Rs. 6000</h4>
-                           <h4><span>Single</span> <br />Rs. 5000</h4>
+                           <h4><span>Double</span> <br />Rs. 2259</h4>
+                           <h4><span>Single</span> <br />Rs. 1930</h4>
                         </div>
                         {/* <span> Holy Riverside Ghats</span> */}
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
@@ -70,8 +70,8 @@ return (
                      <div className="blog_room text-center">
                         <h3 className='tariffSuite'>STANDARD ROOM</h3>
                         <div className='listing'>
-                           <h4><span>Double</span> <br />Rs. 5000</h4>
-                           <h4><span>Single</span> <br />Rs. 4000</h4>
+                           <h4><span>Double</span> <br />Rs. 2259</h4>
+                           <h4><span>Single</span> <br />Rs. 1930</h4>
                         </div>
                         {/* <span>birthplace of Lord Rama  </span> */}
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}

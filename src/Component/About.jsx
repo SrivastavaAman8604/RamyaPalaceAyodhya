@@ -6,7 +6,7 @@ const About = () => {
     <>
     <Helmet>
          <title>About us</title>
-         <meta name='description' content='All About Ramya Palace'/>
+         <meta name='description' content='All About Ramay Palace'/>
       </Helmet>
       <div className="back_re">
          <div className="container">
@@ -23,7 +23,7 @@ const About = () => {
          <div className="container-fluid">
             <div className="row">
                <div className="col-md-5">
-                  <div className="titlepage">
+                  <div className="titlepage animated fadeInUp">
                     
                      <p className="margin_0">We are a premium hotel that strives to provide our guests with the best      possible hospitality experience. Our hotel is located in the heart of the city, providing easy access to all major tourist attractions .</p>
                       <p>Our well-appointed rooms are designed to offer the utmost comfort and convenience, equipped with modern amenities to cater to all your needs. We offer a range of room types to choose from, including deluxe rooms and suites.</p>
@@ -31,7 +31,7 @@ const About = () => {
                      <a className="read_more" href="Javascript:void(0)"> Read More</a>
                   </div>
                </div>
-               <div className="col-md-7">
+               <div className="col-md-7  animated fadeInUp">
                   <div className="about_img">
                      <figure><img src="images/cropImages/20220509_185915.jpg" alt="about hotel"/></figure>
                   </div>
