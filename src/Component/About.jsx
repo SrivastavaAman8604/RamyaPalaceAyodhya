@@ -33,7 +33,12 @@ const About = () => {
                </div>
                <div className="col-md-7  animated fadeInUp">
                   <div className="about_img">
-                     <figure><img src="images/cropImages/20220509_185915.jpg" alt="about hotel"/></figure>
+                     <figure>
+                        <img src="images/Images/aboutImg.jpg" alt="about hotel"/>
+                        {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30 (4).jpeg'/> */}
+                        
+                        {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30.jpeg'/> */}
+                     </figure>
                   </div>
                </div>
             </div>

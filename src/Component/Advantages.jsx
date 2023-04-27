@@ -36,7 +36,7 @@ const Room = () => {
                      <div className="col-md-5 col-sm-6">
                         <div id="serv_hover"  className="room">
                            <div className="room_img animated fadeInUp">
-                              <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-01.jpg" alt="Parking Facility"/></figure>
+                              <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-01.jpg" alt="Parking Facility"/></figure>
                            </div>
                         </div>
                      </div>
@@ -64,7 +64,7 @@ const Room = () => {
                         <div className="col-md-5 col-sm-6 animated fadeInUp">
                            <div id="serv_hover"  className="room">
                               <div className="room_img">
-                                 <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-02.jpg" alt="Parking Facility"/></figure>
+                                 <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-02.jpg" alt="Parking Facility"/></figure>
                               </div>
                               {/* <div className="bed_room">
                                  <h3>Bed Room</h3>
@@ -84,7 +84,7 @@ const Room = () => {
                         <div className="col-md-5 col-sm-6">
                            <div id="serv_hover"  className="room">
                               <div className="room_img animated fadeInUp">
-                                 <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-03.jpg" alt="Parking Facility"/></figure>
+                                 <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-03.jpg" alt="Parking Facility"/></figure>
                               </div>
                               {/* <div className="bed_room">
                                  <h3>Bed Room</h3>
@@ -115,7 +115,7 @@ const Room = () => {
                            <div className="col-md-5 col-sm-6 animated fadeInUp">
                               <div id="serv_hover"  className="room">
                                  <div className="room_img">
-                                    <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-05.jpg" alt="Parking Facility"/></figure>
+                                    <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-05.jpg" alt="Parking Facility"/></figure>
                                  </div>
                                  {/* <div className="bed_room">
                                     <h3>Bed Room</h3>
@@ -134,7 +134,7 @@ const Room = () => {
                         <div className="col-md-5 col-sm-6 animated fadeInUp">
                            <div id="serv_hover"  className="room">
                               <div className="room_img">
-                                 <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-06.jpg" alt="Parking Facility"/></figure>
+                                 <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-06.jpg" alt="Parking Facility"/></figure>
                               </div>
                            </div>
                         </div>
@@ -161,7 +161,7 @@ const Room = () => {
                         <div className="col-md-5 col-sm-6 animated fadeInUp">
                            <div id="serv_hover"  className="room">
                               <div className="room_img">
-                                 <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-07.jpg" alt="Parking Facility"/></figure>
+                                 <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-07.jpg" alt="Parking Facility"/></figure>
                               </div>
                               {/* <div className="bed_room">
                                  <h3>Bed Room</h3>

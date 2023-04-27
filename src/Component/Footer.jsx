@@ -56,7 +56,7 @@ const Footer = () => {
                      <ul className="conta">
                         <li><i className="fa fa-map-marker" aria-hidden="true"></i> BSNL Office, 1/4/48 A, to, Asharfi Bhawan Chauraha Rd, Ayodhya, Uttar Pradesh 224123</li>
                         <li><i className="fa fa-mobile" aria-hidden="true"></i> +91 9651000333</li>
-                        <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#"> demo@gmail.com</Link></li>
+                        <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#">info@ramaypalace.com</Link></li>
                      </ul>
                   </div>
                   {/* <div className="col-md-4">

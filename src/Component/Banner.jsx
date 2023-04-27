@@ -36,16 +36,16 @@ const Banner = () => {
             </ol>
             <div className="carousel-inner ">
                <div className="carousel-item active">
-                  <img className="first-slide" src="images/cropImages/20220509_185915.1.jpg" alt="First slide"/>
+                  <img className="first-slide" src="images/Images/20220509_185915.1.jpg" alt="First slide"/>
                   <img className="first-slide" src="images/Images edit/1280x854/Hotel-Post-1280x854-00.jpg" alt="First slide"/>
                   <div className="container">
                   </div>
                </div>
                <div className="carousel-item">
-                  <img className="second-slide" src="images/cropImages/20220509_185426.2.jpg" alt="Second slide" />
+                  <img className="second-slide" src="images/Images/20220509_185426.2.jpg" alt="Second slide" />
                </div>
                <div className="carousel-item">
-                  <img className="third-slide h-25" src="images/cropImages/20220509_184754.1.jpg" alt="Third slide"/>
+                  <img className="third-slide h-25" src="images/Images/20220509_184754.1.jpg" alt="Third slide"/>
                </div>
             </div>
             <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -65,18 +65,21 @@ const Banner = () => {
                interval={2000}
                infiniteLoop={true}
                autoPlay={true}
+               style={{height:"1392px;"}}
             >
-               <div>
-                  {/* <img src='images/Images edit/1080x1080/Hotel-Post-00.jpg'/> */}
-                  <img src="images/cropImages/20220509_185915.1.jpg" />
+               <div className='adjust'>
+                  {/* <img src='images/Images/img.jpeg'/> */}
+                  <img src="images/Images/slide/20220509_185915.2.jpg" />
                     {/* <p className="legend">Legend 1</p> */}
                </div>
                <div>
-                  <img src="images/cropImages/20220509_185426.2.jpg" />
+                  <img src="images/Images/slide/20220509_185426.3.jpg" />
+                  {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30 (4).jpeg'/> */}
                     {/* <p className="legend">Legend 2</p> */}
                </div>
                <div>
-                  <img src="images/cropImages/20220509_184754.1.jpg" />
+                  {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30 (5).jpeg'/> */}
+                  <img src="images/Images/slide/20220509_184754.4.jpg" />
                     {/* <p className="legend">Legend 3</p> */}
                </div>
             </Carousel>
@@ -181,7 +184,7 @@ const Banner = () => {
                </div>
                <div className="col-md-7">
                   <div className="about_img">
-                     <figure><img src="images/cropImages/20220509_185915.jpg" alt="about hotel" /></figure>
+                     <figure><img src="images/Images/aboutImg.jpg" alt="about hotel" /></figure>
                   </div>
                </div>
             </div>
@@ -203,7 +206,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img animated fadeInUp">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-01.jpg" alt="Parking Facility"/></figure>
+                        <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-01.jpg" alt="Parking Facility"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -214,7 +217,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img animated fadeInUp">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-02.jpg" alt="Spacious Room"/></figure>
+                        <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-02.jpg" alt="Spacious Room"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -225,7 +228,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img animated fadeInUp">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-03.jpg" alt="Luxury & comfy room"/></figure>
+                        <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-03.jpg" alt="Luxury & comfy room"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -236,7 +239,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img animated fadeInUp">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-05.jpg" alt="fully AC"/></figure>
+                        <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-05.jpg" alt="fully AC"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -247,7 +250,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img animated fadeInUp">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-06.jpg" alt="300m from Shri Ram Janmbhoomi"/></figure>
+                        <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-06.jpg" alt="300m from Shri Ram Janmbhoomi"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -258,7 +261,7 @@ const Banner = () => {
                <div className="col-md-4 col-sm-6">
                   <div id="serv_hover"  className="room">
                      <div className="room_img animated fadeInUp">
-                        <figure><img src="images/Images edit/1280x854/Hotel-Post-1280x854-07.jpg" alt="Affordable Price"/></figure>
+                        <figure><img src="images/Images/Facilities/Hotel-Post-1280x854-07.jpg" alt="Affordable Price"/></figure>
                      </div>
                      {/* <div className="bed_room">
                         <h3>Bed Room</h3>
@@ -285,7 +288,7 @@ const Banner = () => {
                <div className="col-md-4">
                   <div className="blog_box">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/arti (1).jpg" alt="Sandhya Arti"/></figure>
+                        <figure><img src="images/Images/Ayodhya/arti (1).jpg" alt="Sandhya Arti"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Sandhya Arti</h3>
@@ -297,7 +300,7 @@ const Banner = () => {
                <div className="col-md-4">
                   <div className="blog_box room">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/AYODHYA.jpg" alt="Ghat of Ayodhya"/></figure>
+                        <figure><img src="images/Images/Ayodhya/AYODHYA.jpg" alt="Ghat of Ayodhya"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ghat</h3>
@@ -309,7 +312,7 @@ const Banner = () => {
                <div className="col-md-4 ">
                   <div className="blog_box room">
                      <div className="blog_img ">
-                        <figure><img src="images/ayodhya/Mandir (1).jpg" alt="Ram Janmabhoomi"/></figure>
+                        <figure><img src="images/Images/Ayodhya/Mandir (1).jpg" alt="Ram Janmabhoomi"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ram Janmbhoomi</h3>

@@ -41,7 +41,7 @@ const Blog = () => {
                <div className="col-md-4">
                   <div className="blog_box">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/arti (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/Images/Ayodhya/arti (1).jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Sandhya Arti</h3>
@@ -53,7 +53,7 @@ const Blog = () => {
                <div className="col-md-4">
                   <div className="blog_box room">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/AYODHYA.jpg" alt="#"/></figure>
+                        <figure><img src="images/Images/Ayodhya/AYODHYA.jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ghat</h3>
@@ -65,7 +65,7 @@ const Blog = () => {
                <div className="col-md-4 ">
                   <div className="blog_box room">
                      <div className="blog_img ">
-                        <figure><img src="images/ayodhya/Mandir (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/Images/Ayodhya/Mandir (1).jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ram Janmabhoomi</h3>
@@ -79,7 +79,7 @@ const Blog = () => {
                <div className="col-md-4">
                   <div className="blog_box">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/Hanuman (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/Images/Ayodhya/Hanuman (1).jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Hanuman Garhi</h3>
@@ -91,7 +91,7 @@ const Blog = () => {
                <div className="col-md-4">
                   <div className="blog_box room">
                      <div className="blog_img">
-                        <figure><img src="images/ayodhya/ramkot (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/Images/Ayodhya/ramkot (1).jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ramkot Fort</h3>
@@ -103,7 +103,7 @@ const Blog = () => {
                <div className="col-md-4 ">
                   <div className="blog_box room">
                      <div className="blog_img ">
-                        <figure><img src="images/ayodhya/sita-ki-rasoi (1).jpg" alt="#"/></figure>
+                        <figure><img src="images/Images/Ayodhya/sita-ki-rasoi (1).jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Sita ki Rasoi</h3>

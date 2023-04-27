@@ -35,7 +35,7 @@ const Header = () => {
                            </li>
                            <li className='forres'>
                               
-                                 <i className="fa fa-envelope-open"></i> Info@gmail.com
+                                 <i className="fa fa-envelope-open"></i> info@ramaypalace.com
                               
                            </li>
                            

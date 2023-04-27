@@ -328,3 +328,7 @@ label{margin-left: 20px;}
     padding-top: -10px;
 }
 
+.adjust{
+    width: auto;
+    max-height: 300px;
+}
