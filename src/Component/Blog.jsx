@@ -5,8 +5,9 @@ const Blog = () => {
   return (
     <>
     <Helmet>
-         <title>Ayodhya</title>
-         <meta name='description' content='Tourist Places in Ayodhya'/>
+         <title>Visit Ayodhya Ram Janmbhoomi thru Hotel Ramay Palace</title>
+         <link rel="canonical" href="https://ramaypalace.com/ayodhya" />
+         <meta name='description' content='Visit Ram Janmbhoomi in Ayodhya, through our Hotel Ramay Palace. Our comfortable Accommodations and Travel Desk always there to help you'/>
       </Helmet>
       <div className="back_re">
          <div className="container">
@@ -38,79 +39,96 @@ const Blog = () => {
                </div>
             </div>
             <div className="row animated fadeInUp">
-               <div className="col-md-4">
-                  <div className="blog_box">
-                     <div className="blog_img">
-                        <figure><img src="images/Images/Ayodhya/arti (1).jpg" alt="#"/></figure>
-                     </div>
-                     <div className="blog_room">
-                        <h3>Sandhya Arti</h3>
-                        <span>offering prayers to Lord Rama  </span>
-                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
-                     </div>
-                  </div>
-               </div>
-               <div className="col-md-4">
+            <div className="col-md-4 ">
                   <div className="blog_box room">
-                     <div className="blog_img">
-                        <figure><img src="images/Images/Ayodhya/AYODHYA.jpg" alt="#"/></figure>
-                     </div>
-                     <div className="blog_room">
-                        <h3>Ghat</h3>
-                        <span> Holy Riverside Ghats</span>
-                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
-                     </div>
-                  </div>
-               </div>
-               <div className="col-md-4 ">
-                  <div className="blog_box room">
-                     <div className="blog_img ">
+                     <div className="blog_img ayodhya">
                         <figure><img src="images/Images/Ayodhya/Mandir (1).jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
                         <h3>Ram Janmabhoomi</h3>
-                        <span>birthplace of Lord Rama  </span>
+                        <span>Birthplace of Shri Ram</span>
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
                      </div>
                   </div>
                </div>
-            </div>
-            <div className="row">
                <div className="col-md-4">
                   <div className="blog_box">
-                     <div className="blog_img">
-                        <figure><img src="images/Images/Ayodhya/Hanuman (1).jpg" alt="#"/></figure>
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/kanakBhavan1.jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
-                        <h3>Hanuman Garhi</h3>
-                        <span>Hindu temple dedicated to Hanuman.</span>
+                        <h3>Kanak Bhawan</h3>
+                        <span>Temple for Shri Ram and Mata Sita.</span>
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
                      </div>
                   </div>
                </div>
                <div className="col-md-4">
                   <div className="blog_box room">
-                     <div className="blog_img">
-                        <figure><img src="images/Images/Ayodhya/ramkot (1).jpg" alt="#"/></figure>
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/DashrathMahal.jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
-                        <h3>Ramkot Fort</h3>
-                        <span>Ancient fort in Ayodhya.</span>
-                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
+                        <h3>Dashrath Mahal</h3>
+                        <span>Shri Ram Father Dashrath Mahal</span>
+                        
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+            <div className="row">
+               <div className="col-md-4">
+                  <div className="blog_box">
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/Hanuman (1).jpg" alt="#"/></figure>
+                     </div>
+                     <div className="blog_room">
+                        <h3>Hanuman Garhi</h3>
+                        <span>Temple dedicated to Hanuman Ji.</span>
+                     </div>
+                  </div>
+               </div>
+               <div className="col-md-4">
+                  <div className="blog_box room">
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/NageshwarNath.jpg" alt="#"/></figure>
+                     </div>
+                     <div className="blog_room">
+                        <h3>Nageshwarnath Temple</h3>
+                        <span>temple dedicated to Lord Shiva.</span>
                      </div>
                   </div>
                </div>
                <div className="col-md-4 ">
                   <div className="blog_box room">
-                     <div className="blog_img ">
-                        <figure><img src="images/Images/Ayodhya/sita-ki-rasoi (1).jpg" alt="#"/></figure>
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/sarayuriver.jpg" alt="#"/></figure>
                      </div>
                      <div className="blog_room">
-                        <h3>Sita ki Rasoi</h3>
-                        <span>Kitchen of Goddess Sita.  </span>
+                        <h3>Sarayu River</h3>
+                        <span>Sarayu River Ayodhya</span>
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
                      </div>
                   </div>
+               </div>
+               <div className="col-md-4 ">
+
+               </div>
+               <div className="col-md-4 ">
+                  <div className="blog_box room">
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/devikali.jpg" alt="#"/></figure>
+                     </div>
+                     <div className="blog_room">
+                        <h3>Dev Kali Temple</h3>
+                        <span>Maa Kali Temple Ayodhya</span>
+                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
+                     </div>
+                  </div>
+               </div>
+               <div className="col-md-4 ">
+
                </div>
             </div>
          </div>

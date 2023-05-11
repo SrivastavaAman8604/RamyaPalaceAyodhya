@@ -1,21 +1,53 @@
-import React,{useState} from 'react'
+import React,{useState,useRef} from 'react'
 import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import {Link} from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Contact from './Contact';
+import emailjs from '@emailjs/browser';
+import ContactUs from './ContactUs';
 // import { SocialIcon } from 'react-social-icons';
 
 const Banner = () => {
    const [startDate, setStartDate] = useState(new Date());
    const [endDate, setEndDate] = useState(new Date());
 
+   // const[name,setName]=useState("");
+   // const[email,setEmail]=useState("");
+   // const[phone,setPhone]=useState("");
+   // const[message,setMessage]=useState("");
+   // const form = useRef();
+
+   // const sendEmail = (e) => {
+   //    e.preventDefault();
+   //        try {
+   //            emailjs.sendForm('service_smjpmre', 'template_rired5p', form.current, 'TWOC87q98bmLmrTRC')
+   //        .then((result) => {
+   //            console.log(result.text);
+   //            console.log("message sent")
+   //            setName("");
+   //            setEmail("");
+   //            setPhone("");
+   //            setMessage("");
+              
+   //        }, (error) => {
+   //            console.log(error.text);
+   //            console.log(error);
+   //        });
+   //        } catch (error) {
+   //            console.log(error);
+   //        }
+   //    };
+
+
   return (
    <>
       <Helmet>
-         <title>Ramay Palace</title>
-         <meta name='description' content='Home Page '/>
+         <title>Hotel Ramay Palace Ayodhya - near Ram Janmbhoomi</title>
+         <link rel="canonical" href="https://ramaypalace.com" />
+         <meta name='description' content='Welcome to Hotel Ramay Palace, a boutique hotel in Ayodhya close to Ram Janmbhoomi where you can stay with your family and have a spiritual vacation.'/>
       </Helmet>
    <section className="banner_main" >
       <div className="icon-bar">
@@ -28,36 +60,7 @@ const Banner = () => {
    <a href="https://api.whatsapp.com/send?phone=+919651000333&amp;text=Hi! I need your help with a booking for Hotel Ramay Palace" target="_blank" className="whatsapp"><i className="fa fa-whatsapp"></i></a>
    <a href="tel:+919651000333" target="_blank" className="phone"><i className="fa fa-phone"></i></a>
 </div>
-         {/* <div id="myCarousel" className="carousel slide banner" data-ride="carousel" >
-            <ol className="carousel-indicators ">
-               <li data-target="#myCarousel" data-slide-to="0" className="active"></li>
-               <li data-target="#myCarousel" data-slide-to="1"></li>
-               <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div className="carousel-inner ">
-               <div className="carousel-item active">
-                  <img className="first-slide" src="images/Images/20220509_185915.1.jpg" alt="First slide"/>
-                  <img className="first-slide" src="images/Images edit/1280x854/Hotel-Post-1280x854-00.jpg" alt="First slide"/>
-                  <div className="container">
-                  </div>
-               </div>
-               <div className="carousel-item">
-                  <img className="second-slide" src="images/Images/20220509_185426.2.jpg" alt="Second slide" />
-               </div>
-               <div className="carousel-item">
-                  <img className="third-slide h-25" src="images/Images/20220509_184754.1.jpg" alt="Third slide"/>
-               </div>
-            </div>
-            <a className="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-            </a>
-            <a className="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-            </a>
-         </div> */}
-
+ 
             <Carousel 
                showIndicators={false}
                showThumbs={false} 
@@ -65,21 +68,25 @@ const Banner = () => {
                interval={2000}
                infiniteLoop={true}
                autoPlay={true}
-               style={{height:"1392px;"}}
             >
                <div className='adjust'>
                   {/* <img src='images/Images/img.jpeg'/> */}
-                  <img src="images/Images/slide/20220509_185915.2.jpg" />
+                  <img src="images/Images/slide/Hotel-Ramay-Palace-Ayodhya-1.jpg" />
                     {/* <p className="legend">Legend 1</p> */}
                </div>
                <div>
-                  <img src="images/Images/slide/20220509_185426.3.jpg" />
+                  <img src="images/Images/slide/Hotel-Ramay-Palace-Ayodhya-2.2.jpg" />
                   {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30 (4).jpeg'/> */}
                     {/* <p className="legend">Legend 2</p> */}
                </div>
                <div>
                   {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30 (5).jpeg'/> */}
-                  <img src="images/Images/slide/20220509_184754.4.jpg" />
+                  <img src="images/Images/slide/Hotel-Ramay-Palace-Ayodhya.jpeg" />
+                    {/* <p className="legend">Legend 3</p> */}
+               </div>
+               <div>
+                  {/* <img src='images/NewImages/WhatsApp Image 2023-04-27 at 11.01.30 (5).jpeg'/> */}
+                  <img src="images/Images/slide/Hotel-Ramay-Palace-Ayodhya-2.jpg" />
                     {/* <p className="legend">Legend 3</p> */}
                </div>
             </Carousel>
@@ -90,47 +97,48 @@ const Banner = () => {
             <div className="col-md-5">
                <div className="book_room animated fadeInUp">
                   <h1>Book a Room Online</h1>
-                  <form className="book_now">
+                  <div className="booking-message"></div>
+                  <form id='bookingform' className="book_now">
                      <div className="row">
                         <div className="col-md-12">
                            <div className='row'>
                            <div className='col-md-6'>
                               <span>Name</span>
-                              <input className="online_book" id="name-book" placeholder="Enter name" type="name"/>
+                              <input className="online_book" id="booking_name" placeholder="Enter name" type="text"/>
                            </div>
                            <div className="col-md-6">
                               <span>Email</span>
-                              <input className="online_book" id="email-book" placeholder="Email" type="email" name="email"/>
+                              <input className="online_book" id="booking_email" placeholder="Email" type="email" name="email"/>
                            </div>
                            </div>
                         </div>
                         <div className="col-md-12">
                            <div className='row'>
-                           <div className='col-md-6'>
-                              <span>Phone </span>
-                              <input className="online_book" id='phone-book' placeholder="Enter number" type="phone" name="phone"/>
-                           </div>
-                           <div className="col-md-6">
-                              <span>No. of Persons</span>
-                              <input className="online_book" id="person-book" placeholder="No. of Persons" list="p-details" name="person"/>
-                                 <datalist id="p-details">
-                                                {/* <option value="">No. of Persons</option> */}
-                                                <option value="1 Adult">1 Adult</option>
-                                                <option value="2 Adult">2 Adult</option>
-                                                <option value="3 Adult">3 Adult</option>
-                                                <option value="4 Adult">4 Adult</option>
-                                                <option value="5 Adult">5 Adult</option>
-                                                <option value="6 Adult">6 Adult</option>
-                                 </datalist>
-                           </div>
+                              <div className='col-md-6'>
+                                 <span>Phone </span>
+                                 <input className="online_book" id='booking_phone' placeholder="Enter number" type="text" name="phone"/>
+                              </div>
+                              <div className="col-md-6">
+                                 <span>No. of Persons</span>
+                                 {/* <input className="online_book" id="person-book" placeholder="No. of Persons" list="p-details" name="person"/> */}
+                                    <select id="booking_person" className="online_book">
+                                       {/* <option value="">No. of Persons</option> */}
+                                       <option value="1 Adult">1 Adult</option>
+                                       <option value="2 Adult">2 Adult</option>
+                                       <option value="3 Adult">3 Adult</option>
+                                       <option value="4 Adult">4 Adult</option>
+                                       <option value="5 Adult">5 Adult</option>
+                                       <option value="6 Adult">6 Adult</option>
+                                    </select>
+                              </div>
                            </div>
                         </div>
                         <div className="col-md-12">
                            <div className='row'>
                            <div className="col-md-6">
-                              <span>Arrival</span>
+                              <span>Check-In</span>
                               {/* <img className="date_cua" src="images/date.png" alt='Arrival date'/> */}
-                              <DatePicker className="online_book" 
+                              <DatePicker className="online_book" id="booking_checkin" name='checkin'
                               selected={startDate}
                               dateFormat='dd-MM-yyyy'
                               onChange={(date) => setStartDate(date)} 
@@ -139,9 +147,9 @@ const Banner = () => {
                               {/* <input className="online_book form-control datepicker" id="date_picker" placeholder="dd/mm/yyyy" type="text" name="dd/mm/yyyy"/> */}
                            </div>
                            <div className='col-md-6'>
-                              <span>Departure</span>
+                              <span>Check-Out</span>
                               {/* <img className="date_cua" src="images/date.png" alt='Departure date'/> */}
-                              <DatePicker className="online_book" 
+                              <DatePicker className="online_book" id="booking_checkout" name='checkout'
                               selected={endDate} 
                               dateFormat='dd-MM-yyyy'
                               onChange={(date) => setEndDate(date)} 
@@ -153,7 +161,7 @@ const Banner = () => {
                            </div>
                         </div>
                         <div className="col-md-12">
-                           <button className="book_btn book-now-submit">Book Now</button>
+                           <button className="book_btn book-now-submit" type='button'>Book Now</button>
                         </div>
                      </div>
                   </form>
@@ -176,15 +184,20 @@ const Banner = () => {
             <div className="row">
                <div className="col-md-5">
                   <div className="titlepage animated fadeInUp">
-                     <h2>About Us</h2>
-                     <p>We are a premium hotel that strives to provide our guests with the best      possible hospitality experience. Our hotel is located in the heart of the city, providing easy access to all major tourist attractions. </p>
-                     <p>At our hotel, we are committed to providing our guests with a memorable and enjoyable stay. Our friendly and courteous staff are always available to assist you with any queries or requests you may have. Thank you for choosing our hotel for your stay in Ayodhya. </p>
+                     <h1>Hotel Ramay Palace Ayodhya</h1>
+                     <h3><strong>300m from Shri Ram Janmbhoomi</strong></h3>
+                     <p>We are a boutique Hotel in Ayodhya, the land of Ram Janmbhoomi. We strive to provide our guests with the best possible hospitality experience. Our hotel provides easy access to all major tourist destinations in Ayodhya, like Ram Janmbhoomi, Hanuman Garhi, Ramkot Fort & Sita ki Rasoi and many more.
+                      </p>
+                     <p>At our hotel, we are committed to providing our guests with a memorable and enjoyable stay. Our friendly and courteous staff are always available to assist you with any queries or requests you may have. 
+                     </p>
+                     <p>We also have a Travel Desk from where we help our Guests to arrange Taxis, Guides and other things needed to visit Temples and other Religious Locations.
+                     </p>
                      <Link className="read_more" to={"/about"}> Read More</Link>
                   </div>
                </div>
                <div className="col-md-7">
                   <div className="about_img">
-                     <figure><img src="images/Images/aboutImg.jpg" alt="about hotel" /></figure>
+                     <figure><img src="images/Images/About-Us/about-hotel-ramay-palace.jpeg" alt="about hotel" /></figure>
                   </div>
                </div>
             </div>
@@ -279,48 +292,49 @@ const Banner = () => {
             <div className="row">
                <div className="col-md-12">
                   <div className="titlepage">
-                     <h2>Pilgrimage</h2>
+                     <h2>Explore Ayodhya through us</h2>
                      <p>Discover the Spiritual Essence </p>
                   </div>
                </div>
             </div>
             <div className="row">
-               <div className="col-md-4">
-                  <div className="blog_box">
-                     <div className="blog_img">
-                        <figure><img src="images/Images/Ayodhya/arti (1).jpg" alt="Sandhya Arti"/></figure>
-                     </div>
-                     <div className="blog_room">
-                        <h3>Sandhya Arti</h3>
-                        <span>offering prayers to Lord Rama  </span>
-                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
-                     </div>
-                  </div>
-               </div>
-               <div className="col-md-4">
+            <div className="col-md-4 ">
                   <div className="blog_box room">
-                     <div className="blog_img">
-                        <figure><img src="images/Images/Ayodhya/AYODHYA.jpg" alt="Ghat of Ayodhya"/></figure>
-                     </div>
-                     <div className="blog_room">
-                        <h3>Ghat</h3>
-                        <span> Holy Riverside Ghats</span>
-                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
-                     </div>
-                  </div>
-               </div>
-               <div className="col-md-4 ">
-                  <div className="blog_box room">
-                     <div className="blog_img ">
+                     <div className="blog_img ayodhya">
                         <figure><img src="images/Images/Ayodhya/Mandir (1).jpg" alt="Ram Janmabhoomi"/></figure>
                      </div>
                      <div className="blog_room">
-                        <h3>Ram Janmbhoomi</h3>
-                        <span>birthplace of Lord Rama  </span>
+                        <h3>Shri Ram Janmbhoomi</h3>
+                        <span>birthplace of Shri Rama  </span>
                         {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
                      </div>
                   </div>
                </div>
+               <div className="col-md-4">
+                  <div className="blog_box">
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/kanakBhavan.jpg" alt="Kanak Bhawan"/></figure>
+                     </div>
+                     <div className="blog_room">
+                        <h3>Kanak Bhawan</h3>
+                        <span>Temple for Shri Ram and Mata Sita.</span>
+                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
+                     </div>
+                  </div>
+               </div>
+               <div className="col-md-4">
+                  <div className="blog_box room">
+                     <div className="blog_img ayodhya">
+                        <figure><img src="images/Images/Ayodhya/Hanuman (1).jpg" alt="Ghat of Ayodhya"/></figure>
+                     </div>
+                     <div className="blog_room">
+                        <h3>Hanuman Garhi</h3>
+                        <span> Temple dedicated to Hanuman Ji.</span>
+                        {/* <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generatorsIf you are   </p> */}
+                     </div>
+                  </div>
+               </div>
+               
             </div>
             <Link className="book_btn text-center" to={"/ayodhya"}> Read More</Link>
          </div>
@@ -338,7 +352,8 @@ const Banner = () => {
             </div>
             <div className="row">
                <div className="col-md-6">
-                  <form id="request" className="main_form">
+               {/* <div className="response-message"></div>
+                  <form id="contactUsForm" className="main_form" >
                      <div className="row">
                         <div className="col-md-12 ">
                            <input className="contactus" id="name" placeholder="Name" type="type" name="Name" /> 
@@ -350,13 +365,15 @@ const Banner = () => {
                            <input className="contactus" id="phone" placeholder="Phone Number" type="type" name="Phone Number" />                          
                         </div>
                         <div className="col-md-12">
-                           <textarea className="textarea" id="message" placeholder="Message" type="type" Message="Name"/>
+                           <textarea className="textarea" id="message" placeholder="Message" type="type" name="Message"/>
                         </div>
                         <div className="col-md-12">
-                           <button className="send_btn contact-us-submit" type='submit'>Send</button>
+                           <button className="send_btn contact-us-submit" type='button' >Send</button>
                         </div>
                      </div>
-                  </form>
+                  </form> */}
+                  
+                  <ContactUs/>
                </div>
                <div className="col-md-6">
                   <div className="map_main">

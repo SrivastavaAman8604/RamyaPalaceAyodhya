@@ -5,8 +5,10 @@ const Room = () => {
   return (
     <>
       <Helmet>
-         <title>Facilities </title>
-         <meta name='description' content='Facilities '/>
+         <meta charSet="utf-8" />
+         <title>Facilities at Hotel Ramay Palace - Ayodhya Ram Janmbhoomi</title>        ''  
+         <link rel="canonical" href="https://ramaypalace.com/advantage" />
+         <meta name='description' content='Enjoy comfortable facilities in Hotel Ramay Palace near Ram Janmbhoomi Ayodhya. We have Parking, Spacious and AC Rooms, and other amenities'/>
       </Helmet>
       <div className="back_re">
          <div className="container">

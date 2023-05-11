@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div>
-      
+      <div className="loader_gif" id="ajax-loder" style={{display: "none"}}></div>
       <footer>
          <div className="footer">
             <div className="container">
@@ -18,12 +18,12 @@ const Footer = () => {
                         <li> <i className="fa fa-envelope" aria-hidden="true"></i><Link to="#"> demo@gmail.com</Link></li>
                      </ul> */}
                      <img src="images/Hotel Ramaya Palace Logo_.png" alt="" />
-                     <ul className="social_icon text-center">
+                     {/* <ul className="social_icon text-center">
                         <li><Link to="#"><i className="fa fa-facebook" aria-hidden="true"></i></Link></li>
                         <li><Link to="#"><i className="fa fa-instagram" aria-hidden="true"></i></Link></li>
-                        {/* <li><Link to="#"><i className="fa fa-linkedin" aria-hidden="true"></i></Link></li>
-                        <li><Link to="#"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link></li> */}
-                     </ul>
+                        <li><Link to="#"><i className="fa fa-linkedin" aria-hidden="true"></i></Link></li>
+                        <li><Link to="#"><i className="fa fa-youtube-play" aria-hidden="true"></i></Link></li>
+                     </ul> */}
                   </div>
                   <div className="col-md-4">
                      <h3>Menu Link</h3>

@@ -332,3 +332,21 @@ label{margin-left: 20px;}
     width: auto;
     max-height: 300px;
 }
+
+.home-aboutus .titlepage h1{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.loader_gif {
+    background: url(../images/ajax-loader.gif) 50% 20% no-repeat rgb(0, 0, 0);
+    background-color: black;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    /* z-index: 99999; */
+    z-index: 999999999;
+    opacity: .7;
+}

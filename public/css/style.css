@@ -159,6 +159,11 @@ img {
      max-width: 100%;
      height: auto;
      object-fit: cover;
+     /* height: 270px; */
+}
+
+.ayodhya img{
+     height: 270px;
 }
 
  :focus {
@@ -612,7 +617,15 @@ button {
 /** blog section **/
 
 .blog {
-     background: url(../images/ayodhya/ghat.jpg);
+     background: url(../images/Images/Ayodhya/ghat.jpg);
+     background-repeat: no-repeat;
+     background-size: 100% 100%;
+     padding: 60px 0 30px 0;
+     margin-top: 60px;
+}
+
+.blog2 {
+     /* background: url(../images/Images/Ayodhya/ghat.jpg); */
      background-repeat: no-repeat;
      background-size: 100% 100%;
      padding: 60px 0 30px 0;
@@ -685,6 +698,11 @@ button {
      line-height: 20px;
 }
 
+.blog_box .listing .price{
+     font-size: 21px;
+     font-weight: bold;
+     color: #ff0909; ;
+}
 
 /** end blog section **/
 

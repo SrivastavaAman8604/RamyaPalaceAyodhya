@@ -1,14 +1,57 @@
 import React from 'react'
 import Helmet from 'react-helmet';
+import ContactUs from './ContactUs';
+// import axios from 'axios';
+// import emailjs from '@emailjs/browser';
 
 
 const Contact = () => {
 
+//    const [userName, createUser] = useState('')
+//   const onSubmit = async (e) => {
+//     e.preventDefault()
+//     const post = { userName: userName }
+//     try {
+//       const res = await axios.post('http://localhost:3001/users', post)
+//       console.log(res.data)
+//     } catch (e) {
+//       alert(e)
+//     }
+//   }
+
+   // const[name,setName]=useState("");
+   // const[email,setEmail]=useState("");
+   // const[phone,setPhone]=useState("");
+   // const[message,setMessage]=useState("");
+   // const form = useRef();
+
+   // const sendEmail = (e) => {
+   //    e.preventDefault();
+   //        try {
+   //            emailjs.sendForm('service_smjpmre', 'template_rired5p', form.current, 'TWOC87q98bmLmrTRC')
+   //        .then((result) => {
+   //            console.log(result.text);
+   //            console.log("message sent")
+   //            setName("");
+   //            setEmail("");
+   //            setPhone("");
+   //            setMessage("");
+              
+   //        }, (error) => {
+   //            console.log(error.text);
+   //            console.log(error);
+   //        });
+   //        } catch (error) {
+   //            console.log(error);
+   //        }
+   //    };
+
   return (
     <>
       <Helmet>
-         <title>Contact </title>
-         <meta name='description' content='Contact us if you have any question or requests'/>
+         <title>Contact Hotel Ramay Palace - Near Ram Janmbhoomi Ayodhya</title>
+         <link rel="canonical" href="https://ramaypalace.com/contact" />
+         <meta name='description' content='Contact Hotel Ramay Palace for visiting Ram Janmbhoomi Ayodhya and having an accommodation close to religious places in Ayodhya'/>
       </Helmet>
     <main className="back_re">
          <div className="container">
@@ -25,10 +68,11 @@ const Contact = () => {
          <div className="container">
             <div className="row">
                <div className="col-md-6">
-                  <form id="request" className="main_form" >
+                  {/* <div className="response-message"></div>
+                  <form id="contactUsForm" className="main_form" >
                      <div className="row">
                         <div className="col-md-12 ">
-                           <input className="contactus" id="name" placeholder="Name" type="text" name="Name"/> 
+                           <input className="contactus" id="name"  placeholder="Name" type="text" name="Name"/> 
                         </div>
                         <div className="col-md-12">
                            <input className="contactus" id="email" placeholder="Email" type="email" name="Email"/>
@@ -37,13 +81,15 @@ const Contact = () => {
                            <input className="contactus" id="phone" placeholder="Phone Number" type="number" name="Phone Number"/>                         
                         </div>
                         <div className="col-md-12">
-                           <textarea className="textarea" id="message" placeholder="Message" type="text" Message="Name"/>
+                           <textarea className="textarea" id="message" placeholder="Message" type="text" name="Message"/>
                         </div>
                         <div className="col-md-12">
-                           <button className="send_btn contact-us-submit" type='submit'>Send</button>
+                           <button className="send_btn contact-us-submit" type='button'>Send</button>
                         </div>
                      </div>
-                  </form>
+                  </form> */}
+                  
+                  <ContactUs/>
                </div>
                <div className="col-md-6">
                   <div className="map_main">

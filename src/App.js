@@ -13,6 +13,7 @@ import Gallery from './Component/Gallery';
 import Header from './Component/Header';
 import Room from './Component/Advantages';
 import Tariff from './Component/Tariff';
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -30,6 +31,8 @@ function App() {
         <Route path='/gallery' element={<Gallery/>}/>
         <Route path='/Prices' element={<Tariff/>}/>
         <Route path='/contact' element={<Contact/>}/>
+
+        
       </Routes>
       <Footer/>  
     </Router>
